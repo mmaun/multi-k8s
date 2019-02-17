@@ -1,6 +1,7 @@
 docker build -t maunconsultancy/multi-client:latest -t maunconsultancy/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t maunconsultancy/multi-server:latest -t maunconsultancy/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t maunconsultancy/multi-worker:latest -t maunconsultancy/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
 docker push maunconsultancy/multi-client:latest
 docker push maunconsultancy/multi-server:latest
 docker push maunconsultancy/multi-worker:latest 
