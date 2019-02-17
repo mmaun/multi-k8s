@@ -3,7 +3,7 @@ service:
 - docker
 env:
   global:
-  - SHA=$(get rev-parse HEAD)
+  - SHA=$(git rev-parse HEAD)
   - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
 - curl https://sdk.cloud.google.com | bash > /dev/null;
